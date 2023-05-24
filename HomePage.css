@@ -15,7 +15,7 @@ body
 }
 .navbar
 {
-    background-image: linear-gradient(to right, #A3A3FF, #1F1FFF);
+    background-image: linear-gradient(to right, #B589D6, #552586);
     padding: 0 !important;
 }
 .navbar-brand img
@@ -34,7 +34,7 @@ body
 }
 #banner
 {
-    background-image: linear-gradient(to right, #A3A3FF, #1F1FFF);
+    background-image: linear-gradient(to right, #B589D6, #552586);
     color:#fff;
     padding-top: 1%;
 }
@@ -67,11 +67,12 @@ body
 }
 #stakeholder .btn-primary
 {
+    margin-top: 10px;
     box-shadow: none;
     padding: 8px 25px;
     border: none;
     border-radius: 20px;
-    background-image: linear-gradient(to right, #A3A3FF, #1F1FFF);
+    background-image: linear-gradient(to right, #9969C7, #552586);
 }
 #social-media
 {
