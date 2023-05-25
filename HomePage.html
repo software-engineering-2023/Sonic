@@ -18,16 +18,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">HOME</a>
+                      <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="HomePage.html">HOME</a></button></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">ABOUT US</a>
+                      <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="AboutUs.html">ABOUT US</a></button></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">CONTACT US</a>
+                      <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="ContactUs.html">CONTACT US</a></button></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">SIGN UP</a>
+                      <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="SignUp.html">SIGN UP</a></button></a>
                     </li>
                   </ul>
                 </div>
@@ -44,31 +44,20 @@
                 </div>
             </div>
         </section>
-        <section id="Stakeholder">
-            <div class="container text-center">
-                <h1 class="title">Login as a</h1>
-                <div class="row text-center">
-                    <div class="col-md-4 Stakeholder">
-                        <img src="Client.png" class="client-img">
-                        <h4>CLIENT</h4>
-                        <p>Is any customer receiving or benefiting from the bank.</p>
-                        <button type="button" class="btn btn-primary"><a href="ClientLogin.html">LOGIN</a></button>
-                    </div>
-                    <div class="col-md-4 Stakeholder">
-                        <img src="Banker.png" class="Stakeholder-img">
-                        <h4>BANKER</h4>
-                        <p>Someone who does all non-technical tasks related to the bank.</p>
-                        <button type="button" class="btn btn-primary"><a href="BankerLogin.html">LOGIN</a></button>
-                    </div>
-                    <div class="col-md-4 Stakeholder">
-                        <img src="Admin.png" class="Stakeholder-img">
-                        <h4>ADMIN</h4>
-                        <p>Someone who is in charge of all technical issues related to the bank.</p>
-                        <button type="button" class="btn btn-primary"><a href="AdminLogin.html">LOGIN</a></button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="Login">
+          <div class="text-center">
+              <form style="max-width: 480px; margin:auto;">
+                  <img class="mt-4 LoginPic-img" src="SonicLogo.webp" style="max-width: 40%;">
+                  <h1 class="h3 mb-3 font-weight normal">Please Enter Your Email And Password</h1>
+                  <p>If you dont have an account please consider signing up(on the top right)</p>
+                  <label for="emailAddress" class="sr-only">Email Address</label>
+                  <input type="email" id="emailAddress"
+                  class="form-control" placeholder="Email Address" required autofocus>
+                  <label for="password" class="sr-only">Password</label>
+                  <input type="password" id="password" placeholder="Password" class="form-control">
+                  <button type="button" class="btn btn-primary"><a href="ClientHomePage.html">LOGIN</a></button>
+              </form>
+      </section>
         <section id="social-media">
             <div class="container text-center">
                 <p>FIND US ON SOCIAL MEDIA!</p>

@@ -94,3 +94,20 @@ body
 {
     transform: translateY(-10px);
 }
+#nav-bar .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #BFBFFF, #1F1FFF);
+}
+#Login .btn-primary
+{
+    margin-top: 10px;
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #9969C7, #552586);
+}
