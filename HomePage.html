@@ -51,11 +51,29 @@
                   <h1 class="h3 mb-3 font-weight normal">Please Enter Your Email And Password</h1>
                   <p>If you dont have an account please consider signing up(on the top right)</p>
                   <label for="emailAddress" class="sr-only">Email Address</label>
-                  <input type="email" id="emailAddress"
+                  <input type="text" id="emailAddress"
                   class="form-control" placeholder="Email Address" required autofocus>
                   <label for="password" class="sr-only">Password</label>
                   <input type="password" id="password" placeholder="Password" class="form-control">
-                  <button type="button" class="btn btn-primary"><a href="ClientHomePage.html">LOGIN</a></button>
+                  <button type="button" onclick="loginFunc()" class="btn btn-primary">LOGIN</a></button>
+                  <script type="text/javascript">
+                    function loginFunc() {
+                      var x = document.getElementById("emailAddress").value;
+                      var pass = document.getElementById("password").value;
+                     if (x=="client" && pass==123){
+                     window.open("ClientHomePage.html","_self")
+                    }
+                    else if(x=="banker" && pass==123){
+                      window.open("BankerHomePage.html","_self")
+                    }
+                    else if(x=="admin" && pass==123){
+                      window.open("AdminHomePage.html","_self")
+                    }
+                    else {
+                      window.alert("Wrong Username or Password");
+                  }
+                    }
+                    </script>
               </form>
       </section>
         <section id="social-media">
