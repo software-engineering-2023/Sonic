@@ -59,14 +59,14 @@
                   <script type="text/javascript">
                     function loginFunc() {
                       var x = document.getElementById("emailAddress").value;
-                      var y = document.getElementById("password").value;
-                     if (x=="client" && y==123){
+                      var pass = document.getElementById("password").value;
+                     if (x=="client" && pass==123){
                      window.open("ClientHomePage.html","_self")
                     }
-                    else if(x=="banker" && y==123){
+                    else if(x=="banker" && pass==123){
                       window.open("BankerHomePage.html","_self")
                     }
-                    else if(x=="admin" && y==123){
+                    else if(x=="admin" && pass==123){
                       window.open("AdminHomePage.html","_self")
                     }
                     else {
