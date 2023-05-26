@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index:10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #B589D6, #552586);
+    padding: 0 !important;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+}
+#banner
+{
+    background-image: linear-gradient(to right, #B589D6, #552586);
+    color:#fff;
+    padding-top: 1%;
+}
+.promo-title
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+#Stakeholder
+{
+    padding: 80px 0;
+}
+.client-img
+{
+    width: 100px;
+    margin-top: 10px;
+}
+.Stakeholder-img
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+.Stakeholder h4
+{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+#stakeholder .btn-primary
+{
+    margin-top: 10px;
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #9969C7, #552586);
+}
+#social-media
+{
+    background: #fff;
+    padding: 100px 0;
+}
+#social-media p
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons img
+{
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img
+{
+    transform: translateY(-10px);
+}
+#nav-bar .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #BFBFFF, #1F1FFF);
+}
+#Login .btn-primary
+{
+    margin-top: 10px;
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #9969C7, #552586);
+}
