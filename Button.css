@@ -1,0 +1,10 @@
+testbutton{
+    margin-top: 10px;
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: linear-gradient(to right, #B589D6, #552586);
+    padding: 0 !important;
+
+}
