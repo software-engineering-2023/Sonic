@@ -1,7 +1,7 @@
 <html>
     <head>
-        <title>Sonic Banking </title>
-        <link rel="stylesheet" href="HomePage.css">
+        <title>Bank Account</title>
+        <link rel="stylesheet" href="BankAccount.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
                       <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="ContactUs.html">CONTACT US</a></button></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="SignUp.html">SIGN UP</a></button></a>
+                      <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="ClientHomePage.html">BACK</a></button></a>
                     </li>
                   </ul>
                 </div>
@@ -38,8 +38,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="promo-title">WELCOME TO SONIC BANKING!</p>
-                        <p>The bank for a changing world!</p>
+                        <p class="promo-title">Bank Account</p>
                     </div>
                 </div>
             </div>
@@ -64,6 +63,9 @@
                 window.alert("not enough money for transaction"); 
                 document.getElementById("demo").innerHTML = 'Failed Transaction'; }}
                 </script>
+
+                <p>Close Account</p>
+                <button type="button" class="btn btn-primary">Close Account</a></button>
                <p>      
                 <br>
                 <br>
@@ -72,11 +74,11 @@
                 <button type="button" onclick="transaction()" class="btn btn-primary">transfer</a></button>
                 <br>
                 <br>
-                <input type="text" id="inc" name="inc" value="you have a $300 incoming transaction from account: 87656789" readonly>
+                <input type="text" id="inc" name="inc" value="you have $300 incoming" readonly>
                 <button type="button" id="butAccInc" onclick="acceptInc()" class="btn btn-primary">accept</a></button>
                 <button type="button" id="butDenyInc" onclick="denyInc()" class="btn btn-primary">deny</a></button>
                 <br>
-                <input type="text" id="out" name="out" value="you have a $200 request from account: 87656789" readonly>
+                <input type="text" id="out" name="out" value="you have a $200 request" readonly>
                 <button type="button" id="butAccOut" onclick="acceptOut()" class="btn btn-primary">accept</a></button>
                 <button type="button" id="butDenyOut" onclick="denyOut()" class="btn btn-primary">deny</a></button>
 

@@ -59,6 +59,7 @@ body
     border: none;
     border-radius: 20px;
     background-image: linear-gradient(to right, #B589D6, #552586);
+    text-decoration: none;
 }
 
 #features-section 
@@ -93,4 +94,9 @@ body
 .social-icons a:hover img
 {
     transform: translateY(-10px);
+}
+a
+{
+    text-decoration: none;
+    color: #fff;
 }
