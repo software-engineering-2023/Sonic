@@ -54,10 +54,12 @@
                  var x = document.getElementById("balance").getAttribute('value');
                  var y = prompt("please enter amount");
                  var z = prompt("please enter desired bank");
+                 var x1= prompt("please enter bank type");
                  
                 if(x-y>=0){
                 document.getElementById("balance").setAttribute('value', x-y);
                 document.getElementById("demo").innerHTML = 'Successful Transaction';
+                writeTr(y,z,x1);
                 }
                 else {
                 window.alert("not enough money for transaction"); 
@@ -65,7 +67,7 @@
                 </script>
 
                 <p>Close Account</p>
-                <button type="button" class="btn btn-primary">Close Account</a></button>
+                <button type="button" href="CloseAccount.html" class="btn btn-primary">Close Account</a></button>
                <p>      
                 <br>
                 <br>
@@ -80,9 +82,17 @@
                 <br>
                 <input type="text" id="out" name="out" value="you have a $200 request" readonly>
                 <button type="button" id="butAccOut" onclick="acceptOut()" class="btn btn-primary">accept</a></button>
-                <button type="button" id="butDenyOut" onclick="denyOut()" class="btn btn-primary">deny</a></button>
-
+                <button type="button" id="butDenyOut" onclick="denyOut()" class="btn btn-primary">deny</a></button><br>
+                <br>
+                <br>
+                <p id="demo2"><br></p>
                 <script type="text/javascript">
+                  function writeTr(x,y,z){
+                   
+                   document.getElementById("demo2").innerHTML = ('- amount: '+x+' | bank: '+y+' | bank type: '+z);
+
+                    
+                  }
                   function acceptInc(){
                     var x = document.getElementById("balance").getAttribute('value');
                     var y=parseInt(x);
@@ -129,7 +139,8 @@
                         else
                         window.alert("not enough money for transaction"); 
                         
-                    }
+                    } 
+                    
                 </script>
 
               </form>
