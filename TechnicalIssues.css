@@ -40,3 +40,16 @@ body
     border-radius: 20px;
     background-image: linear-gradient(to right, #BFBFFF, #1F1FFF);
 }
+.btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #B589D6, #552586);
+}
+.btn-primary a
+{
+    color: #fff;
+    text-decoration: none;
+}

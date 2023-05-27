@@ -1,16 +1,14 @@
 <html>
     <head>
-        <title>Loans</title>
-        <link rel="stylesheet" href="Loans.css">
+        <title>Personal Loan Application</title>
+        <link rel="stylesheet" href="PersonalLoan.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     </head>
-
     <body>
-
         <section id="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="SonicLogo.webp"></a>
@@ -29,49 +27,68 @@
                       <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="ContactUs.html">CONTACT US</a></button></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="ClientHomePage.html">BACK</a></button></a>
+                        <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="Loans.html">BACK</a></button></a>
                     </li>
                   </ul>
                 </div>
               </nav>
         </section>
 
-        <section id="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="promo-title">Loans</p>
-                        <p>Please choose one of the options provided below.</p>
-                    </div>
+        <div class="container">
+          <div class="myCard">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="myLeftCtn">
+
+                  <form class="myForm" text-center>
+                    <header>Personal Loan Application</header>
+
+                    <div class="form-group">
+                      <i class="fas fa-user"></i>
+                      <input class="myInput" type="text" placeholder="Name(First Last)" id="username" required>
+                      <div class="invalid-feedback">Please fill out this field.
+                      </div>
+                    </div>  
+
+                      <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input class="myInput" type="password" id="password" placeholder="Account Number" required>
+                      </div>
+
+                      <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input class="myInput" placeholder="Amount" type="text" required>
+                      </div>
+                    
+
+                      <div class="form-group">
+                        <label>
+                          <input id="check_1" name="check_1" type="checkbox" required><small>I read and agree to the Terms and Conditions.</small></input>
+                          <div class="invalid-feedback">You must agree to the Terms and Conditions in order to continue.
+                          </div>
+                        </label>
+                      </div>
+
+                      <input type="submit" class="butt" value="Apply">
+
+                  </form>            
                 </div>
-            </div>
-        </section>
+              </div>
 
-        <section id="Loans">
-            
-            <div class="text-center">
-                <form style="max-width: 480px; margin:auto;">
-                    <p>Apply For a Personal Loan</p>
-                    <button type="button" class="btn btn-primary"><a href="PersonalLoan.html"> Apply</a></button>
-                    <br>
-                    <p>Apply For a Car Loan</p>
-                    <button type="button" class="btn btn-primary"><a href="CarLoan.html"> Apply</a></button>
-                </form>
-            </div>
-        </section>
-
-        <section id="social-media">
-            <div class="container text-center">
-                <p>FIND US ON SOCIAL MEDIA!</p>
-                <div class="social-icons">
-                    <a href="#"><img src="facebook.png"></a>
-                    <a href="#"><img src="instagram.png"></a>
-                    <a href="#"><img src="twitter.png"></a>
-                    <a href="#"><img src="linkedin.png"></a>
-                    <a href="#"><img src="whatsapp.png"></a>
+              <div class="col-md-6">
+                <div class="myRightCtn">
+                  <div class="box">
+                    <header>Welcome!</header>
+                    <p>In order to apply for a personal loan you must enter your Name (First Name Last Name), address, account number, amount, and agree to the Terms and Conditions respectively.</p>
+                    <input type="button" class="butt_out" value="Learn More"/>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
 
+            </div>
+          </div>
+
+        </div>
+        
     </body>
 </html>

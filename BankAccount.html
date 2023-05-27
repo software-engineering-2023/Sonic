@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     </head>
     <body>
+
         <section id="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="SonicLogo.webp"></a>
@@ -39,10 +40,12 @@
                 <div class="row">
                     <div class="col-md-6">
                         <p class="promo-title">Bank Account</p>
+                        <p>Please choose one of the options provided below.</p>
                     </div>
                 </div>
             </div>
         </section>
+        
         <section id="BankAccount">
           <div class="text-center">
               <form style="max-width: 480px; margin:auto;">
@@ -69,19 +72,19 @@
                 
                <p>      
                 <br>
-                <br>
-                transfer money
+               
+                Transfer Money
             </p>
-                <button type="button" onclick="transaction()" class="btn btn-primary">transfer</a></button>
+                <button type="button" onclick="transaction()" class="btn btn-primary">Transfer</a></button>
                 <br>
                 <br>
                 <input type="text" id="inc" name="inc" value="you have $300 incoming" readonly>
-                <button type="button" id="butAccInc" onclick="acceptInc()" class="btn btn-primary">accept</a></button>
-                <button type="button" id="butDenyInc" onclick="denyInc()" class="btn btn-primary">deny</a></button>
+                <button type="button" id="butAccInc" onclick="acceptInc()" class="btn btn-primary">Accept</a></button>
+                <button type="button" id="butDenyInc" onclick="denyInc()" class="btn btn-primary">Deny</a></button>
                 <br>
                 <input type="text" id="out" name="out" value="you have a $200 request" readonly>
-                <button type="button" id="butAccOut" onclick="acceptOut()" class="btn btn-primary">accept</a></button>
-                <button type="button" id="butDenyOut" onclick="denyOut()" class="btn btn-primary">deny</a></button><br>
+                <button type="button" id="butAccOut" onclick="acceptOut()" class="btn btn-primary">Accept</a></button>
+                <button type="button" id="butDenyOut" onclick="denyOut()" class="btn btn-primary">Deny</a></button><br>
                 <br>
                 <br>
                 <p id="demo2"><br></p>
@@ -150,9 +153,10 @@
 <br><br>
 
 <p>Close Account</p>
-                <button type="button" onclick="closeAcc()" class="btn btn-primary" style="color:firebrick;">Close Account</a></button>
+                <button type="button" onclick="closeAcc()" class="btn btn-primary" style="color:fff;">Close Account</a></button>
               </form>
       </section>
+
         <section id="social-media">
             <div class="container text-center">
                 <p>FIND US ON SOCIAL MEDIA!</p>
@@ -165,5 +169,6 @@
                 </div>
             </div>
         </section>
+
     </body>
 </html>
