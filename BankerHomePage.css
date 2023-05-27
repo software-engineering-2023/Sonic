@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index:10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #B589D6, #552586);
+    padding: 0 !important;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+}
+#banner
+{
+    background-image: linear-gradient(to right, #B589D6, #552586);
+    color:#fff;
+    padding-top: 1%;
+}
+.promo-title
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+#nav-bar .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #BFBFFF, #1F1FFF);
+}
+#Login .btn-primary
+.promo-title
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+#features-section .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #B589D6, #552586);
+}
+
+#features-section 
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#features-section
+{
+    padding-top: 20px;
+}
