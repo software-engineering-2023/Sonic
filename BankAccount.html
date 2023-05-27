@@ -66,8 +66,7 @@
                 document.getElementById("demo").innerHTML = 'Failed Transaction'; }}
                 </script>
 
-                <p>Close Account</p>
-                <button type="button" href="CloseAccount.html" class="btn btn-primary">Close Account</a></button>
+                
                <p>      
                 <br>
                 <br>
@@ -87,9 +86,15 @@
                 <br>
                 <p id="demo2"><br></p>
                 <script type="text/javascript">
+
+                  function closeAcc(){
+                    var x=prompt("please type the word *delete* to delete you account");
+                    if(x== "delete")
+                    window.open("CloseAccount.html","_self")
+                  }
                   function writeTr(x,y,z){
                    
-                   document.getElementById("demo2").innerHTML = ('- amount: '+x+' | bank: '+y+' | bank type: '+z);
+                   document.getElementById("demo2").innerHTML = ('- amount: '+x+' | bank: '+y+' | bank type:'+z);
 
                     
                   }
@@ -142,7 +147,10 @@
                     } 
                     
                 </script>
+<br><br>
 
+<p>Close Account</p>
+                <button type="button" onclick="closeAcc()" class="btn btn-primary" style="color:firebrick;">Close Account</a></button>
               </form>
       </section>
         <section id="social-media">
