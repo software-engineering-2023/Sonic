@@ -21,7 +21,8 @@
     border-radius: 15px;
     flex: 9;
 }
-.row{display: flex;
+.row{
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 30px ;
