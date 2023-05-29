@@ -28,10 +28,55 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="promo-title">Technical Issues</p>
+                    <p class="promo-title">Reports</p>
                 </div>
             </div>
         </div>
     </section>
-</body>
+    <br>
+    <h1 align="center">Please report your problem in the space provided below</h1>
+    <div class="hero">
+      <form>
+         <div class="input-group" >
+          Your Name:
+          <br>
+          <input type="text" id="name" required>
+          
+      </div>
+      <div class="input-group" >
+        Your ID:
+        <br>
+        <input type="text" id="id" required>
+        
+    </div>
+    <div class="input-group" >
+      Your Issue:
+      <br>
+      <textarea  id="message"  rows="8"></textarea>
+      
+  </div>
+
+  
+</div>
+      </form>
+
+      <center> <button type="button" style="margin-bottom: 50px;" class="btn btn-primary" onclick="openPopup()">SUBMIT REPORT</button></center>
+      <div class="popup" id="popup" >
+        <img src="tick.jpg.png">
+        <h2>Done!</h2>
+        <p>Your report has been sent successfully</p>
+        <button type="button" onclick="closePopup()"><a>OK</a> </button>
+    </div>
+    <script>
+      let popup=document.getElementById("popup");
+      
+      function openPopup(){
+        popup.classList.add("open-popup");
+      }
+      function closePopup(){
+        window.open("BankerHomePage.html","_self")
+      }
+      </script>
+      
+  </body>
 </html>
