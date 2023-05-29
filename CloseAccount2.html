@@ -28,6 +28,20 @@
             </div>
           </nav>
     </section>
+
+
+    <script type="text/javascript">
+      
+        
+
+
+        function Done(){
+          var inputVal = document.getElementById("name").value;
+        
+            alert("you have deleted " + inputVal+ "'s account");
+}
+      </script>
+
 <br>
 <br>
 <br>
@@ -35,4 +49,15 @@
 <br>
 <br>
 
-    <h1 align="center">Client's Bank Account has been Closed!</h1>
+  <h3> Please enter which Account you want to close:</h3>
+  <label for="name"> Name </label>
+  <input type="text" name="Client" id="name" />
+  
+  <br>
+  
+<br>
+<br>
+<button type="button"  onclick="Done()" class="btn btn-primary" style="color:fff;">Done</a></button>
+
+</body>
+</html>

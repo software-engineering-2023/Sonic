@@ -52,17 +52,34 @@ body
     border-radius: 20px;
     background-image: linear-gradient(to right, #BFBFFF, #1F1FFF);
 }
-.feature-item .btn-primary
+#social-media
 {
+    background: #fff;
+    padding: 100px 0;
+}
+#social-media p
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons img
+{
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img
+{
+    transform: translateY(-10px);
+}
+#BankAccount .btn-primary
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     box-shadow: none;
     padding: 8px 25px;
     border: none;
     border-radius: 20px;
     background-image: linear-gradient(to right, #B589D6, #552586);
-    margin-left: 100px;
-}
-.feature-item .btn-primary a
-{
-    color: #fff;
-    text-decoration: none;
 }
