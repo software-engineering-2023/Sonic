@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="HomePage.html">HOME</a></button></a>
+                  <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="BankerHomePage.html">HOME</a></button></a>
                 </li>
               </ul>
             </div>
@@ -33,5 +33,33 @@
             </div>
         </div>
     </section>
+    <center> <button type="button" style="margin-top: 150px;"class="btn btn-primary" onclick="openPopup()"><a>Remind the client of his due payment</a></button></center>
+    <center> <button type="button" style="margin-top: 50px;"class="btn btn-primary" onclick="openPopup()"><a>Notify the client that his issue has been resolved</a></button></center>
+    <div class="popup" id="popup" >
+    <img src="tick.jpg.png">
+    <h2>Done!</h2>
+    <p>Message sent successfully</p>
+    <button type="button" onclick="closePopup()"><a>OK</a> </button>
+  
+</div>
+
+
+  
+</div>
+<script>
+let popup=document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+function closePopup(){
+  popup.classList.remove("open-popup");
+}
+</script>
+
+
+
+   
+ 
 </body>
 </html>
