@@ -58,19 +58,29 @@
                     <br>
                     <br>
                     <p>Dara's Ice Cream voucher card for 150 EGP. Costs 300 points.</p>
-                    <button type="button" class="btn btn-primary">Redeem</a></button>
+                    <button type="button" onclick="func1(300)" class="btn btn-primary">Redeem</a></button>
                     <br>
                     <br>
                     <p>Zara voucher card for 500 EGP. Costs 1000 points.</p>
-                    <button type="button" class="btn btn-primary">Redeem</a></button>
+                    <button type="button" onclick="func1(1000)" class="btn btn-primary">Redeem</a></button>
                     <br>
                     <br>
                     <p>Tradeline voucher card for 600 EGP. Costs 1200 points.</p>
-                    <button type="button" class="btn btn-primary">Redeem</a></button>
+                    <button type="button" onclick="func1(1500)" class="btn btn-primary">Redeem</a></button>
                 </form>
             </div>
         </section>
-
+        <script type="text/javascript">
+          function func1(y){
+            var x = document.getElementById("balance").getAttribute('value');
+            if(x-y<0)
+            window.alert("not enough points");
+            else{
+              document.getElementById("balance").setAttribute('value',x-y);
+              window.alert("redeemed successfully!");
+            }
+          }
+        </script>
         <section id="social-media">
             <div class="container text-center">
                 <p>FIND US ON SOCIAL MEDIA!</p>

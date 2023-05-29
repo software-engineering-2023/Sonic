@@ -57,15 +57,19 @@
                     <br>
                     <br>
                     <p>Deactivate Card </p>
-                    <button type="button" class="btn btn-primary">Deactivate</a></button>
+                    <button type="button" onclick="deactivate()" class="btn btn-primary">Deactivate</a></button>
                     <br>
                     <br>
                     <p>Freeze Card</p>
-                    <button type="button" class="btn btn-primary">Freeze</a></button>
+                    <button type="button" onclick="freeze()" class="btn btn-primary">Freeze</a></button>
                     <br>
                     <br>
                     <p>Points</p>
                     <button type="button" class="btn btn-primary"><a href="Points.html">View</a></button>
+                    <br>
+                    <br>
+                    <p>Settle</p>
+                    <button type="button" id="set" onclick="settle()" class="btn btn-primary" value=500><a>Settle</a></button>
                     <br>
                     <br>
                     <p>Report</p>
@@ -73,7 +77,30 @@
                 </form>
             </div>
         </section>
+        <script type="text/javascript">
+          function deactivate(){
+            document.getElementById("balance").setAttribute('value',0);
+            window.alert("credit card deactivated");
+          }
+          function freeze(){
+            document.getElementById("balance").setAttribute('value',0);
+            window.alert("credit card frozen");
+          }
+function settle(){
+  var y=document.getElementById("set").getAttribute('value');
+  var x=prompt("You have "+y+" to be paid type desired amount");
+  if(x>=y){
+    document.getElementById("set").disabled='true';
+  }
+  else{
+    document.getElementById("set").setAttribute('value',y-x);
+  }
 
+
+}
+
+
+        </script>
         <section id="social-media">
             <div class="container text-center">
                 <p>FIND US ON SOCIAL MEDIA!</p>
