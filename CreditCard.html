@@ -54,8 +54,15 @@
                     <br>
                     <p>Credit Card Balance:</p>
                     <input type="text" id="balance" name="balance" value="1000" readonly>
-                    <br>
-                    <br>
+                    <br><p>      
+                      <br>
+                     
+                      Transfer Money
+                  </p>
+                      <button type="button" onclick="transaction()" class="btn btn-primary">Transfer</a></button>
+                      <br>
+                      <p id="demo"></p>
+                      <br>
                     <p>Deactivate Card </p>
                     <button type="button" onclick="deactivate()" class="btn btn-primary">Deactivate</a></button>
                     <br>
@@ -98,6 +105,27 @@ function settle(){
 
 
 }
+function transaction(){
+                 var x = document.getElementById("balance").getAttribute('value');
+                 var y = prompt("please enter amount");
+                 var z = prompt("please enter desired bank");
+                 var x1= prompt("please enter bank type");
+                 
+                if(x-y>=0){
+                document.getElementById("balance").setAttribute('value', x-y);
+                document.getElementById("demo").innerHTML = 'Successful Transaction';
+                writeTr(y,z,x1);
+                }
+                else {
+                window.alert("not enough money for transaction"); 
+                document.getElementById("demo").innerHTML = 'Failed Transaction'; }}
+
+                function writeTr(x,y,z){
+                   
+                   document.getElementById("demo").innerHTML = ('- amount: '+x+' | bank: '+y+' | bank type:'+z);
+
+                    
+                  }
 
 
         </script>
