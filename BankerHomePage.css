@@ -52,7 +52,6 @@ body
     border-radius: 20px;
     background-image: linear-gradient(to right, #BFBFFF, #1F1FFF);
 }
-#Login .btn-primary
 .promo-title
 {
     font-size: 30px;
@@ -80,4 +79,9 @@ body
 #features-section
 {
     padding-top: 20px;
+}
+#features-section .btn-primary a
+{
+    color: #fff;
+    text-decoration: none;
 }

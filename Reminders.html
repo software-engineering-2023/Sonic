@@ -1,15 +1,16 @@
 <html>
     <head>
-        <title>Points</title>
-        <link rel="stylesheet" href="Points.css">
+        <title>Loans</title>
+        <link rel="stylesheet" href="Reminders.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     </head>
+
     <body>
-        
+
         <section id="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="SonicLogo.webp"></a>
@@ -28,7 +29,7 @@
                       <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="ContactUs.html">CONTACT US</a></button></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="CreditCard.html">BACK</a></button></a>
+                      <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="ClientHomePage.html">BACK</a></button></a>
                     </li>
                   </ul>
                 </div>
@@ -39,37 +40,68 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="promo-title">Credit Card</p>
-                        <p>Please choose from the options provided below.</p>
+                        <p class="promo-title">Reminders and Notifications</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="CreditCard">
-            <div class="text-center">
-                <form style="max-width: 480px; margin:auto;">
-                    <br>
-                    <p>Points:</p>
-                    <input type="text" id="balance" name="balance" value="1000" readonly>
-                    <br>
-                    <br>
-                    <h1>Available offers</h1>
-                    <br>
-                    <br>
-                    <p>Dara's Ice Cream voucher card for 150 EGP. Costs 300 points.</p>
-                    <button type="button" class="btn btn-primary">Redeem</a></button>
-                    <br>
-                    <br>
-                    <p>Zara voucher card for 500 EGP. Costs 1000 points.</p>
-                    <button type="button" class="btn btn-primary">Redeem</a></button>
-                    <br>
-                    <br>
-                    <p>Tradeline voucher card for 600 EGP. Costs 1200 points.</p>
-                    <button type="button" class="btn btn-primary">Redeem</a></button>
-                </form>
+        <section id="features-section">
+            <div class="feature-item">
+                <button type="button" class="btn btn-primary"><a href="RemNot.html">Notifications</a></button>
+            </div>
+    
+            <div class="feature-item">
+                <button type="button" class="btn btn-primary"><a href="Reminders.html">Reminders</a></button>
             </div>
         </section>
+
+        <div class="container2">
+            <div class="notificationsContainer">
+                <header>
+                    <div class="notificationsHeader">
+                        <h1>Reminders</h1>
+                        <span id="num-of-notif"></span>
+                    </div>
+                    <p id="mark-as-read">Mark All As Done</p>
+                </header>
+                <main>
+                    <div class="notificationCard unread">
+                        <img alt="photo" src="NoOne2.webp">
+                        <div class="description">
+                            <p>Settle this month's car loan installment before the 30th of june.</p>
+                            <p id="notif-time">Due 30/06/2023</p>
+                        </div>
+                    </div>
+
+                    <div class="notificationCard unread">
+                        <img alt="photo" src="NoOne2.webp">
+                        <div class="description">
+                            <p>Pay your telephone bill.</p>
+                            <p id="notif-time">Due 19/06/2023</p>
+                        </div>
+                    </div>
+
+                    <div class="notificationCard">
+                        <img alt="photo" src="NoOne2.webp">
+                        <div class="description">
+                            <p>Settle your gas and electricty bills.</p>
+                            <p id="notif-time">Due 25/05/2023</p>
+                        </div>
+                    </div>
+
+                    <div class="notificationCard">
+                        <img alt="photo" src="NoOne2.webp">
+                        <div class="description">
+                            <p>Settle your credit card bills.</p>
+                            <p id="notif-time">Due 20/05/2023</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="RemNot.js"></script>    
+
 
         <section id="social-media">
             <div class="container text-center">
