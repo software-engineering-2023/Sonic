@@ -35,9 +35,18 @@
 <script>
    
 
-function View(){
-    document.getElementById("demo2").innerHTML="Credit Card Requests:"
-    
+function View1(){
+    window.alert("You accepted the Credit Card Request");
+   document.getElementById("p1").style.display='none';
+   document.getElementById("id1").style.display='none';
+   document.getElementById("id2").style.display='none';
+
+}
+function View2(){
+    window.alert("You rejected the Credit Card Request");
+    document.getElementById("p2").style.display='none';
+   document.getElementById("id3").style.display='none';
+   document.getElementById("id4").style.display='none';
 
 }
 
@@ -46,11 +55,22 @@ function View(){
 <br>
 <br>
 <br>
+
+<h3> Credit Card Requests:</h3>
 <br>
-<button type="button" id="id1" style="margin-left:600px" onclick="View()" class="btn btn-primary">View Credit Card Requests</a></button>
+<p id="p1">1- Client has made a Credit Card Request, Would you like to accept or reject?</p>
+<br>
+<button type="button" id="id1"  onclick="View1()" class="btn btn-primary">Accept</a></button>&nbsp &nbsp &nbsp &nbsp
+<button type="button" id="id2"  onclick="View2()" class="btn btn-primary">Reject</a></button>
 <br>
 <br>
 <br>
+<br>
+<p id="p2">2- Client2 has made a Credit Card Request, Would you like to accept or reject?</p>
+<br>
+<button type="button" id="id3"  onclick="View1()" class="btn btn-primary">Accept</a></button>&nbsp &nbsp &nbsp &nbsp
+<button type="button" id="id4"  onclick="View2()" class="btn btn-primary">Reject</a></button>
+<br> 
 <p style="font-size: 30px;" id="demo2"> </p>
 <br>
 <p id="demo3"> </p>
