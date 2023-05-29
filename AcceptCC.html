@@ -23,93 +23,46 @@
                   <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="HomePage.html">HOME</a></button></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="BankerHomePage.html">BACK</a></button></a>
+                  <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="BankerCreditCard.html">BACK</a></button></a>
                 </li>
               </ul>
             </div>
           </nav>
     </section>
-
-
-
-
-
-    <section id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="promo-title">Bank Account</p>
-                    <p>Please choose one of the options provided below.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="BankerBankAccount">
-      <div class="text-center">
-        <script type="text/javascript">
-            function CloseAccount(){
-  
-              
-                window.open("CloseAccount2.html","_self")
-              
-          }
-          function OpenAccount(){
-  
-            var x=prompt("Please enter the name of the new Client");
-             
-               window.open("OpenAccount2.html","_self")
-              
-          }
-
-        </script>
-           <p>      
-            <br>
-
-     
-    <div class="feature-item">
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-   
-      <button type="button" onclick="OpenAccount()" class="btn btn-primary">Open Bank Account</a></button>
-      <button type="button" onclick="CloseAccount()" class="btn btn-primary">Close Bank Account</a></button>
-      <button type="button"  onclick="" class="btn btn-primary">View transactions</a></button>
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-</body>
-</html>
+    <script>
+         function Accept1(){
+          
+          alert("You have accepted Client's Credit Card Application");
+        }
+        function Accept2(){
+          alert("You have accepted Client2's Credit Card Application");
+      
+          
+        }
+        function Reject1(){
+        
+      
+          alert("You have rejected Client's Credit Card Application");
+        }
+        function Reject2(){
+          alert("You have rejected Client2's Credit Card Application");
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4>Client has a Credit Card application, Would you like to accept or reject?</h4>
+    <br>
+    <button type="button" style="margin-right:200px" onclick=Accept1() class="btn btn-primary">Accept</a></button>
+    <button type="button" style="margin-right:200px" onclick=Reject1() class="btn btn-primary">reject</a></button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4>Client2 has a Credit Card application, Would you like to accept or reject?</h4>
+    <br>
+    <button type="button" style="margin-right:200px" onclick=Accept2() class="btn btn-primary">Accept</a></button>
+    <button type="button" style="margin-right:200px" onclick=Reject2() class="btn btn-primary">reject</a></button>

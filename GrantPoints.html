@@ -1,6 +1,6 @@
 <html>
     <head>
-      <title>Bank Account </title>
+        <title>Granting Points </title>
       <link rel="stylesheet" href="BankerBankAccount.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -10,7 +10,7 @@
     </head>
 <body>
 
-  
+    
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img src="SonicLogo.webp"></a>
@@ -23,93 +23,72 @@
                   <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="HomePage.html">HOME</a></button></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="BankerHomePage.html">BACK</a></button></a>
+                  <a class="nav-link" href="#"><button type="button" class="btn btn-primary"><a href="BankerCreditCard.html">BACK</a></button></a>
                 </li>
+                
               </ul>
             </div>
           </nav>
     </section>
+    <script type="text/javascript">
+
+function Granting1(){
+    var x=document.getElementById("out").value;
+    var y=document.getElementById("out2").value;
+    var z1=parseInt(x);
+    var z2=parseInt(y);
+    document.getElementById("out").setAttribute('value',z1+z2);
+    }
+
+    function Granting2(){
+    var x=document.getElementById("out1").value;
+    var y=document.getElementById("out3").value;
+    var z1=parseInt(x);
+    var z2=parseInt(y);
+    document.getElementById("out1").setAttribute('value',z1+z2);
+    }
 
 
-
-
-
-    <section id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="promo-title">Bank Account</p>
-                    <p>Please choose one of the options provided below.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="BankerBankAccount">
-      <div class="text-center">
-        <script type="text/javascript">
-            function CloseAccount(){
-  
-              
-                window.open("CloseAccount2.html","_self")
-              
-          }
-          function OpenAccount(){
-  
-            var x=prompt("Please enter the name of the new Client");
-             
-               window.open("OpenAccount2.html","_self")
-              
-          }
-
-        </script>
-           <p>      
-            <br>
-
-     
-    <div class="feature-item">
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    </script>
    
-      <button type="button" onclick="OpenAccount()" class="btn btn-primary">Open Bank Account</a></button>
-      <button type="button" onclick="CloseAccount()" class="btn btn-primary">Close Bank Account</a></button>
-      <button type="button"  onclick="" class="btn btn-primary">View transactions</a></button>
+  
+    <br>
+
+    <h4>Client:</h4>
+    <br>
+    Current Points :
+    <br>
+    <input type="text" id="out" name="out" value="500" > 
+    <br>
+    <br>
+    How much points do you want to grant Client?
+    <br>
+    <input type="text" id="out2" name="out2" >
+    <br>
+    <br>
+    
+
+<button type="button" onclick=Granting1()  class="btn btn-primary">Grant</a></button>
 
 
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<h4>Client2:</h4>
+<br>
+Current Points:
+<br>
+<input type="text" id="out1" name="out1" value="800" >
+<br>
+<br>
+How much points do you want to grant Client2? 
+<br>
+<input type="text" id="out3" name="out3" >
+<br>
+<br>
 
 
-
-
-
-
-
-
-
- 
-
+<button type="button" onclick=Granting2()  class="btn btn-primary">Grant</a></button>
 
 </body>
 </html>
