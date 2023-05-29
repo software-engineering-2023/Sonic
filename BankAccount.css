@@ -83,3 +83,19 @@ body
     border-radius: 20px;
     background-image: linear-gradient(to right, #B589D6, #552586);
 }
+.btn-primary
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #B589D6, #552586);
+}
+.btn-primary a
+{
+    color: #fff;
+    text-decoration: none;
+}
